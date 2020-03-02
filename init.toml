@@ -18,11 +18,6 @@
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
-    buffer_index_type = 4
-    enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
 
 # Enable autocomplete layer
 [[layers]]
@@ -35,6 +30,9 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+[options]
+filemanager = "vimfiler"
+sidebar_direction = "right"
 
 [[layers]]
 name = "lang#markdown"
@@ -58,11 +56,19 @@ autocomplete_method = "coc"
 name = 'lsp'
 filetypes = ['c', 'cpp', 'sh', 'python', 'javascript']
 
+    
 [[layers]]
 name = "colorscheme"
 
-[options]
-colorscheme = "tomorrow-night-eighties"
 
 [[custom_plugins]]
 name = "chriskempson/base16-vim"
+
+[options]
+colorscheme = "tomorrow-night-eighties"
+statusline_separator = "arrow"
+statusline_inactive_separator = "arrow"
+buffer_index_type = 4
+enable_tabline_filetype_icon = true
+enable_statusline_mode = true
+
